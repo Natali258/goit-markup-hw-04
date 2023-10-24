@@ -171,6 +171,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 188px 0 188px;
+    margin: 0 auto;
 }
 .black-title {
     max-width: 496px;
