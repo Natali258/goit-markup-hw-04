@@ -72,12 +72,13 @@ body {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-studio {
     color: var(--text-main);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
-.logo-studio:hover {
+.logo:hover .logo-studio {
     color: var(--color-change);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -381,7 +382,7 @@ body {
 }
 
 .customers-cards-li {
-    width: 168px;
+    width: calc((100% - 120px) / 6);
     height: 88px;
     border-radius: 4px;
     border: 1px solid var(--light-slate);
@@ -586,7 +587,7 @@ body {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-overlay:hover .filter-text-overlay {
+.filter-projects-cards:hover .filter-text-overlay {
   transform: translateY(0%);
 }
 
@@ -625,7 +626,7 @@ body {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    transition-delay: 250ms;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
     position: fixed;
